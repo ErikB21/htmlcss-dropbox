@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+body{
+    font-family: 'Open Sans', sans-serif;
+}
+
 /*inizio header*/
 
 header{
@@ -37,13 +41,13 @@ header{
 }
 
 
-ul{
+.links{
     display: flex;
     justify-content: center;
     list-style: none;
 }
 
-li a{
+.links li a{
     padding: 0 10px;
     text-decoration: none;
     color: black;
@@ -51,12 +55,11 @@ li a{
 
 button{
     padding: 10px;
-    margin-right: 5px;
     border: none;
 }
 
 .blue{ 
-    background-color: blue;
+    background-color: #0765ff;
     color: white;
 }
 
@@ -64,7 +67,7 @@ button{
 
 /*fine header*/
 
-/*inizio main*/
+/*inizio top main*/
 
 main{
     margin: 0 auto;
@@ -74,13 +77,13 @@ main{
 
 .container{
     width: 100%;
-    margin-top: 60px;
+    margin-top: 50px;
 }
 
 .main-top{
     width: 100%;
-    height: 550px;
-    background-color: lightblue;
+    height: 520px;
+    background-color: #B4D0E7;
     display: flex;
     flex-direction: column;
     padding: 50px;
@@ -96,8 +99,8 @@ main{
 .main-title{
     width: 80%;
     align-self: center;
-    font-size: 3rem;
-    margin-bottom: 30px;
+    font-size: 2rem;
+    margin-bottom: 15px;
 }
 
 .main-top-text{
@@ -105,10 +108,8 @@ main{
 }
 
 .main-top-text p, .main-top-text button{
-    margin-bottom: 30px;
+    margin-bottom: 20px;
 }
-
- 
 
 .main-top-img{
     width: 70%;
@@ -117,6 +118,11 @@ main{
 .main-top-img img{
     width: 100%;
 }
+
+/*fine top main*/
+
+
+/*inizio grid main*/
 
 .main-grid-container{
     margin-top:80px;
@@ -129,22 +135,26 @@ main{
 
 .text-grid{
     text-align: left;
-    width: 70%;
-    padding: 20px 0;
+    width: 65%;
+    padding: 30px 0;
 }
 
 .text-grid h2{
-    margin-bottom: 30px;
+    margin-bottom: 40px;
+    font-size: 2rem;
 }
 
 .text-grid span{
-    padding-right: 30px;
+    padding-right: 40px;
+}
+
+.text-grid span i, .icon-blue{
+    color: #0765ff;
 }
 
 .main-grid {
-    width: 70%;
+    width: 65%;
     display: grid;
-    height: 500px;
     align-content: center;
     grid-template-columns: auto auto auto;
     gap: 10px;
@@ -152,27 +162,75 @@ main{
   
   .main-grid > div {
     background-color: rgba(255, 255, 255, 0.8);
-    text-align: center;
     padding: 10px 0;
-    height: 490px;
     border: 1px solid black;
   }
 
+  .list-grid ul{
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      padding: 20px;
+  }
+
+  .list-grid li{
+      padding: 10px 0;
+      list-style: none;
+  }
+
+  .opacity{
+      opacity: 0.4;
+  }
+
+
+  h4{
+      font-size: 1.5rem;
+  }
+
   .nav-grid{
-      height: 40px;
+      height: 30px;
       width: 100%;
-      border-bottom: 2px solid black;
+      line-height: 30px;
+      text-align: center;
+      border-bottom: 1px solid black;
   }
 
   .grid-bottom{
-      width: 70%;
+      width: 65%;
       height: 200px;
-      border: 2px solid black;
-      margin: 30px 0px 60px 0px;
+      border: 1px solid black;
+      margin: 60px auto;
   }
 
+  .enterprise{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+  }
+
+  .enterprise-title{
+      width: 50%;
+      height: 170px;
+  }
+
+  .enterprise-title p, .enterprise-title h3{
+      padding-top: 15px;
+      margin-left: 15px;
+  }
+
+
+  .enterprise-button{
+      width: 50%;
+      height: 170px;
+      padding: 20px 0px 0px 150px ;
+  }
+
+  /*fine grid main*/
+
+  /*inizio center main*/
   .main-center{
-      width: 70%;
+      width: 65%;
       height: 400px;
       display: flex;
       align-items: center;
@@ -182,19 +240,36 @@ main{
 
   .image-main-center{
       width: 60%;
-      height: 400px;
-      background-color: goldenrod;
+  }
+
+  .image-main-center img{
+      width: 100%;
   }
 
   .textimage-main-center{
       width: 40%;
-      height: 400px;
-      background-color: violet;
+  }
+
+  .textimage-main-center *{
+      margin:20px;
+  }
+
+  .white{
+      border: 1px solid black;
+  }
+
+  /*fine center main*/
+
+  /*inizio card main*/
+
+  .card-title{
+      width: 65%;
+      margin: auto;
+      padding-bottom: 30px;
   }
 
   .cards-main{
-      width: 70%;
-      background-color: bisque;
+      width: 65%;
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
@@ -204,19 +279,33 @@ main{
   }
 
   .card{
-      height: 350px;
-      width: calc(90% / 3 - 5px);
-      margin: 5px;
-      border: 2px solid black;
+      width: calc(90% / 3 - 15px);
+      margin: 15px;
   }
 
+  .card img{
+      width: 100%;
+  }
+
+  .card h4{
+      padding: 10px 0px;
+  }
+
+  /*fine card main*/
+
+  /*inizio team main*/
+
   .team-title{
-      width: 70%;
+      width: 65%;
       margin: 0 auto;
       height: 50px;
       text-align: left;
-      background-color: aquamarine;
-      margin-bottom: 60px;
+      margin-bottom: 120px;
+      padding-top: 30px ;
+  }
+  
+  .team-title p {
+      padding: 30px 0px;
   }
 
   .team-square{
@@ -238,15 +327,63 @@ main{
      height: 50%;
      width: 50%;
      border: 1px solid black;
- } 
-                                                                            
+ }
+
+ .logo-width{
+     position: relative;
+ }
+ 
+ .logo-width img{
+     width: 50%;
+     position: absolute;
+     top: 50%;
+     left: 50%;
+     transform: translate(-50%, -50%);
+ }
+
+.green{
+     background-color: #a2d39b ;
+ }
+
+.bordeaux{
+    background-color: #61082b;
+ }
+
+.lightblue{
+    background-color: #0093ce;
+ }
+
+.lightred{
+    background-color:#ff1c1c ;
+ }
+
+.red{
+    background-color:#d5001f ;
+ }
+
+.lightgray{
+    background-color: #b4d0e7;
+ }
+
+.blunight{
+    background-color: #0d2481;
+ }
+
+.yellow{
+    background-color: #ffd830;
+ }
+
 .square-center{
     width: 34%;
 }
 
+/*fine team main*/
+
+/*inizio bluetext main*/
+
 .blue-text{
     width: 100%;
-    background-color: lightblue;
+    background-color: #b4d0e7;
     height: 200px;
     display: flex;
     justify-content: center;
@@ -254,14 +391,18 @@ main{
 }
 
 .blue-text div{
-    width: 70%;
+    width: 65%;
     display: flex;
     justify-content: space-around;
     align-items: center;
 }
 
+/*fine bluetext main*/
+
+/*inizio answer main*/
+
 .answer-main{
-    width: 70%;
+    width: 65%;
     display: flex;
     margin: auto;
     text-align: left;
@@ -290,7 +431,7 @@ main{
     border-bottom: 1px solid black;
 }
 
-/*fine main*/
+/*fine answer main*/
 
 /*inizio footer*/
 
