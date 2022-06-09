@@ -334,7 +334,7 @@ main{
  }
  
  .logo-width img{
-     width: 50%;
+     width: 50%; 
      position: absolute;
      top: 50%;
      left: 50%;
@@ -375,7 +375,19 @@ main{
 
 .square-center{
     width: 34%;
+    background-color: #f5f5f5;
+    padding: 40px 0px 30px 15px;
 }
+
+.square-center img{
+    width: 60%;
+}
+
+.square-center .like-drop{
+    padding: 30px 0px;
+}
+
+
 
 /*fine team main*/
 
@@ -390,11 +402,19 @@ main{
     margin-bottom: 40px;
 }
 
-.blue-text div{
+.blue-text > div{
     width: 65%;
     display: flex;
     justify-content: space-around;
     align-items: center;
+}
+
+.blue-text h2{
+    font-size: 2.5rem;
+}
+
+.noborder{
+    border: none;
 }
 
 /*fine bluetext main*/
@@ -437,8 +457,9 @@ main{
 
 footer{
     width: 100%;
-    height: 350px;
     background-color: black;
+    margin-top: 30px;
+    height: 400px;
 }
 
 .footer-container{
@@ -451,14 +472,20 @@ footer{
 
 .footer-box{
     width: 15%;
-    padding: 30px 0px;
-
+    padding-top: 30px;
 }
+
+.marginlang{
+    margin-top: 30px;
+}
+
+
 
 .footer-box ul{
     display: flex;
     flex-direction: column;
     list-style: none;
+    margin-bottom: 60px;
 }
 
 .footer-box ul li{
@@ -467,8 +494,13 @@ footer{
 
 }
 
-.up-language{
-    border-bottom: 1px solid white;
+
+.language{
+    display: inline-block;
+    border-top: 1px solid white;
 }
 
+.footer-container .language{
+    color: white;
+}
 
