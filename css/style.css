@@ -6,20 +6,29 @@
 
 /*inizio header*/
 
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999;
+}
+
 .all-header{
-    height: 60px;
     margin: 0 auto;
     padding: 15px 0;
     display: flex;
     justify-content: space-between;
-    border: 2px solid black;
+    background-color: white;
 }
 
 .header-left{
     line-height: 30px;
     display: flex;
     justify-content: flex-start;
+    padding-left: 5px;
 }
+
 
 .header-right{
     line-height: 30px;
@@ -27,9 +36,6 @@
     justify-content: flex-end;
 }
 
-.header-logo, .top-link-left{
-    display: inline-block;
-}
 
 ul{
     display: flex;
@@ -44,12 +50,17 @@ li a{
 }
 
 button{
-    color: white;
-    background-color: blue;
     padding: 10px;
     margin-right: 5px;
     border: none;
 }
+
+.blue{ 
+    background-color: blue;
+    color: white;
+}
+
+
 
 /*fine header*/
 
@@ -63,41 +74,48 @@ main{
 
 .container{
     width: 100%;
+    margin-top: 60px;
 }
 
 .main-top{
     width: 100%;
-    height: 500px;
+    height: 550px;
     background-color: lightblue;
-    margin: 0;
-    border: 1px dotted #000;
     display: flex;
     flex-direction: column;
     padding: 50px;
 }
 
 .main-box{
+    width: 80%;
     display: flex;
     justify-content: center;
+    margin: auto;
 }
 
 .main-title{
     width: 80%;
-    background-color: green;
     align-self: center;
-    text-align: center;
+    font-size: 3rem;
+    margin-bottom: 30px;
 }
 
 .main-top-text{
     width: 30%;
-    height: 400px;
-    background-color: blue;
 }
 
+.main-top-text p, .main-top-text button{
+    margin-bottom: 30px;
+}
+
+ 
+
 .main-top-img{
-    width: 50%;
-    height: 450px;
-    background-color: red;
+    width: 70%;
+}
+
+.main-top-img img{
+    width: 100%;
 }
 
 .main-grid-container{
@@ -137,7 +155,7 @@ main{
     text-align: center;
     padding: 10px 0;
     height: 490px;
-    border: 2px solid black;
+    border: 1px solid black;
   }
 
   .nav-grid{
@@ -203,17 +221,16 @@ main{
 
   .team-square{
       width: 100%;
-      height: 400px;
       display: flex;
   }
 
   .square{
-      width: 33%;
+      width: calc(100% / 3);
+      height: calc(100vw / 3);
   }
 
-  .square-left{
+  .square-left, .square-right{
       display: flex;
-      flex-direction: row;
       flex-wrap: wrap;
   }
 
@@ -222,12 +239,7 @@ main{
      width: 50%;
      border: 1px solid black;
  } 
-
- .square-right{
-    display: flex;
-    flex-wrap: wrap;
-}
-
+                                                                            
 .square-center{
     width: 34%;
 }
