@@ -363,6 +363,7 @@ main{
 
  .logo-width{
      position: relative;
+     transition: 2s;
  }
  
  .logo-width img{
@@ -496,7 +497,6 @@ footer{
     width: 100%;
     background-color: black;
     margin-top: 30px;
-    height: 400px;
 }
 
 .footer-container{
@@ -526,6 +526,7 @@ footer{
 .footer-box ul li{
     padding-top: 10px;
     color: white;
+    font-size: 13px;
 }
 
 .language{
@@ -568,4 +569,12 @@ button:hover{
 .answer-display:hover .fa-angle-down{
     transform: rotate(180deg)
 }
+
+.logo-width:hover{
+    transform: scale(0.54);
+    filter: opacity(70%);
+    border: none;
+    border-radius: 25px;
+}
+
 
